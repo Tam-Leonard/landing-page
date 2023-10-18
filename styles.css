@@ -585,4 +585,56 @@
   }
 }
 
+/* Mobile and Tablet Styles for About Section */
+@media only screen and (max-width: 1199px) {
+  #about .about {
+    flex-direction: column;
+  }
+  
+  #about .col-left {
+    width: 100%; /* Adjust the width to 100% for mobile */
+    padding: 0; /* Remove padding for mobile */
+  }
+  
+  #about .about .col-left .about-img::after {
+    display: none; /* Remove the border for mobile */
+  }
+  
+  #about .col-right {
+    padding: 30px;
+  }
+  
+  #about .col-right h1 {
+    text-align: center; /* Center the heading for mobile */
+  }
+}
+
+/* Mobile and Tablet Styles for Projects Section */
+@media only screen and (max-width: 1199px) {
+  #projects .project-item {
+    width: 100%; /* Adjust the width to 100% for mobile */
+    margin: 10px 0; /* Adjust margin for mobile */
+  }
+  
+  #projects .project-info {
+    padding: 20px; /* Reduce padding for mobile */
+  }
+  
+  #projects .project-info h1 {
+    font-size: 3rem; /* Adjust font size for mobile */
+  }
+  
+  #projects .project-info h2 {
+    font-size: 1.6rem; /* Adjust font size for mobile */
+  }
+  
+  #projects .project-info p {
+    font-size: 1.2rem; /* Adjust font size for mobile */
+  }
+  
+  #projects .project-img {
+    flex-basis: 100%; /* Adjust the width to 100% for mobile */
+  }
+}
+
 /* End of Media Queary */

@@ -621,9 +621,9 @@
     height: auto; /* Remove fixed height if present */
   }
 
-.mobile-menu.closed ul {
-  display: none;
-}
+  .mobile-menu.closed ul li a {
+    display: none;
+  }
 
 }
 /* End of Media Queary */

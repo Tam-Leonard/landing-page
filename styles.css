@@ -605,6 +605,8 @@
     body {
       font-size: 8px; /* Further reduce base font size */
     }
+
+
   
     #header .nav-list ul {
       position: static; /* Display navigation inline on mobile */
@@ -615,5 +617,13 @@
       display: block; /* Stack navigation links */
       margin-bottom: 10px;
     }
+#header {
+    height: auto; /* Remove fixed height if present */
   }
+
+.mobile-menu.closed ul {
+  display: none;
+}
+
+}
 /* End of Media Queary */

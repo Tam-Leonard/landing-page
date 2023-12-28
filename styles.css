@@ -555,91 +555,65 @@
   /* End Contact */
 
   /* Media Queary for desktop */
-@media only screen and (min-width: 1200px) {
-    
-    #header .hamburger {
-      display: none;
-    
+  @media (max-width: 768px) {
+    /* General adjustments for smaller screens */
+    body {
+      font-size: 9px; /* Adjust base font size */
     }
-
+  
+    .container {
+      padding: 20px; /* Reduce padding in containers */
+    }
+  
+    h1, h2, h3 {
+      font-size: 1.5rem; /* Reduce heading sizes */
+    }
+  
+    p {
+      font-size: 1rem; /* Reduce paragraph font size */
+      line-height: 1.6rem; /* Adjust line height for readability */
+    }
+  
+    /* Specific adjustments for sections */
+    #header {
+      height: auto; /* Remove fixed height for smaller screens */
+    }
+  
+    #hero {
+      background-position: center; /* Center background image */
+    }
+  
+    #services .service-bottom {
+      flex-direction: column; /* Stack service items vertically */
+    }
+  
+    #services .service-item {
+      margin: 10px 0; /* Adjust margins for stacked items */
+    }
+  
+    #projects .all-projects {
+      flex-direction: column; /* Stack project items vertically */
+    }
+  
+    #projects .project-item {
+      width: 100%; /* Full width for project items */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Additional adjustments for mobile screens */
+    body {
+      font-size: 8px; /* Further reduce base font size */
+    }
+  
     #header .nav-list ul {
-      position: initial;
-      display: block;
-      height: auto;
-      width: fit-content;
+      position: static; /* Display navigation inline on mobile */
       background-color: transparent;
     }
   
-    #header .nav-list ul li {
-      display: inline-block;
+    #header .nav-list ul a {
+      display: block; /* Stack navigation links */
+      margin-bottom: 10px;
     }
-
-    #header .nav-list ul li a {
-        font-size: 1.8rem;
-      }
-    #header .nav-list ul a:after {
-      display: none;
-    
-    }
-
-      /* end header */
-      
-  #services .service-bottom .service-item {
-    flex-basis: 22%;
-    margin: 1.5%;
   }
-}
-
-/* Mobile and Tablet Styles for About Section */
-@media only screen and (max-width: 1199px) {
-  #about .about {
-    flex-direction: column;
-  }
-  
-  #about .col-left {
-    width: 100%; /* Adjust the width to 100% for mobile */
-    padding: 0; /* Remove padding for mobile */
-  }
-  
-  #about .about .col-left .about-img::after {
-    display: none; /* Remove the border for mobile */
-  }
-  
-  #about .col-right {
-    padding: 30px;
-  }
-  
-  #about .col-right h1 {
-    text-align: center; /* Center the heading for mobile */
-  }
-}
-
-/* Mobile and Tablet Styles for Projects Section */
-@media only screen and (max-width: 1199px) {
-  #projects .project-item {
-    width: 100%; /* Adjust the width to 100% for mobile */
-    margin: 10px 0; /* Adjust margin for mobile */
-  }
-  
-  #projects .project-info {
-    padding: 20px; /* Reduce padding for mobile */
-  }
-  
-  #projects .project-info h1 {
-    font-size: 3rem; /* Adjust font size for mobile */
-  }
-  
-  #projects .project-info h2 {
-    font-size: 1.6rem; /* Adjust font size for mobile */
-  }
-  
-  #projects .project-info p {
-    font-size: 1.2rem; /* Adjust font size for mobile */
-  }
-  
-  #projects .project-img {
-    flex-basis: 100%; /* Adjust the width to 100% for mobile */
-  }
-}
-
 /* End of Media Queary */

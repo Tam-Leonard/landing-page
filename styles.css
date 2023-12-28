@@ -547,6 +547,11 @@
     text-align: left;
     padding-left: 20px;
   }
+
+  #contact .contact-item .contact-info p {
+    font-size: 13px; /* Adjust as needed */
+    font-weight: bold;
+  }
   /* End Contact */
 
   /* Media Queary for desktop */
